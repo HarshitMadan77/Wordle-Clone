@@ -69,7 +69,7 @@ nav h1 {
 }
 
 #almost {
-  background-color: #b49f39;
+  background-color: #b49f39 !important;
 }
 
 #error {
