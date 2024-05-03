@@ -52,7 +52,7 @@ function App() {
     else {
       alert("Word Not Found");
     }
-    if(currWord === correctWord){
+    if(currWord.toLowerCase() === correctWord.toLowerCase()){
       setGameOver({ gameOver: true, guessedWord: true });
       return;
     }
@@ -64,7 +64,7 @@ function App() {
   return (
     <div className="App">
       <nav>
-        <h1>Wordle</h1>
+        <h1>WORDSMITH</h1>
       </nav>
       <appContext.Provider value={{ board, setBoard, currAttempt, setCurrAttempt, onSelectLetter, onDelete, onEnter, correctWord, setDisabledLetter, disabledLetters, gameOver, setGameOver }}>
         <div className='game'>
